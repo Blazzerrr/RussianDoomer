@@ -1,10 +1,10 @@
 # Random Russian Doomer
 
-##Русская тоска здесь
+## Русская тоска здесь
 **[https://russiandoomer.ru](https://russiandoomer.ru)**
 
 ## Скриншот
-![Screenshot](https://github.com/Blazzerrr/RussianDoomer/blob/master/image.png) 
+![Screenshot](https://github.com/Blazzerrr/RussianDoomer/blob/main/image.png)
 
 ## Запуск
 ```bash
