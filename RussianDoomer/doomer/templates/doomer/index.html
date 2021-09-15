@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Russian Doomer</title>
+    <meta name="description" content="Russian Doomer - русская тоска в твоих наушниках">
+    <meta name="Keywords" content="Музыка, Music, Россия, Russia, Russian, Russian Doomer, Doomer, Doomer Music, Russian Doomer Music, Думер, Думер музыка, русский думер, русская музыка">
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta name="yandex-verification" content="00924dc0c9fffa86" />
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+
+    <link rel="icon" type="image/png" href="{% static "img/icon.png" %}" />
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
+    <link rel="stylesheet" href="{% static "css/roboto.css" %}" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static "js/script.js" %}"></script>
+</head>
+
+<body onload="Random()">
+    <div class="playeer">
+        <div class="block_main">
+            <br>
+            <span class="block_name">
+                <h1>Russian Doomer</h1>
+            </span>
+
+            <span class="block_desc">
+                <h2>Русская тоска в твоих наушниках</h2>
+            </span>
+            <br>
+        </div>
+
+        <div class="block_playeer">
+            <div class="block_name_music">
+                <span class="name_music">
+                    <h2 id="nameMusic">Загрузка...</h2>
+                </span>
+            </div>
+            
+            <div class="block_audio">
+                <audio id="audioPlayeer" src="" autoplay controls="controls" onended="Random();">Ваш браузер не поддерживает тег audio</audio>
+            </div>
+
+            <div class="random">
+                <span class="button_random" onclick="Random()">Рандом</span>
+            </div>
+
+            <div class="history">
+                <details>
+                    <summary>История</summary>
+                    <div class="text_history">
+                        <div id="all_history">
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="donate">
+        <div class="block_main">
+            <br>
+            <span class="block_name">
+                <h1>Последние донаты</h1>
+            </span>
+            <br>
+        </div>
+
+        <p id="lastIdDonations">{{ lastIdDonations }}</p>
+
+        <div class="donations" id="donations">
+            {% for d in donations %}
+
+                <div class="donation">
+                    <span class="donate_name">
+                        <h1>{{ d.username }} - {{ d.amount }} {{ d.currency }}</h1>
+                    </span>
+
+                    <span class="donate_message">
+                        <p>{{ d.message }}</p>
+                    </span>
+                </div>
+
+            {% endfor %}
+        </div>
+
+        <div class="donate_url">
+            <a href="https://www.donationalerts.com/r/blazzerrr" target="_blank">
+                <span class="button_donation">
+                    <p class="donate_text">Задонатить</p>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="chat">
+        <div class="block_main">
+            <br>
+            <span class="block_name">
+                <h1>Чат</h1>
+            </span>
+            <br>
+        </div>
+
+        <p id="lastIdMessages">{{ lastIdMessages }}</p>
+
+        <div class="messages" id="messages">
+
+            {% for m in messages %}
+
+                <div class="message">
+                    <span class="sender_message">
+                        <p>{{ m.datetime }} {{ m.name }}</p>
+                    </span>
+
+                    <span class="text_message">
+                        <p>{{ m.message }}</p>
+                    </span>
+                </div>
+
+            {% endfor %}
+        </div>
+
+        <div>
+            <div class="action_message" align="left">
+                <div class="block_your_name">
+                    <p>Ваше имя:</p> 
+                    <input type="text" name="name" id="name" class="your_name"  placeholder="Введите ваше имя:">
+                </div>
+
+                <div class="block_your_message">
+                    <p>Ваше сообщение:</p> 
+                    <input type="text" name="message" id="message" class="your_message"  placeholder="Введите ваше сообщение:">
+                </div>
+
+                <div class="block_submit">
+                    <button id="submit" type="button" class="send_message" name="btn_submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <footer>
+            <a href="https://t.me/rdoomer" target="_blank">
+                <img class="link_button" id="telegram" src="{% static "img/telegram.png" %}" alt="Telegram">
+            </a>
+
+            <a href="https://github.com/Blazzerrr/RussianDoomer" target="_blank">
+                <img class="link_button" id="github" src="{% static "img/github.png" %}" alt="GitHub">
+            </a>
+        </footer>
+    </div>
+
+</body>
+</html>

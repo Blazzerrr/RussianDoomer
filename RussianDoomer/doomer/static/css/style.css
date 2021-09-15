@@ -1,0 +1,333 @@
+body {
+    background: url("../img/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.playeer {  
+    position: relative;
+}
+
+.block_main {  
+    background-color: rgb(40, 40, 40, 0.8);
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.block_name {
+    font-family: Roboto;
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.block_desc{
+    font-family: Roboto;
+    font-size: 120%;
+    color: #fff;
+    text-align: center;
+}
+
+.block_playeer {  
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.block_name_music {
+    background: rgb(196, 196, 196, 0.8);
+}
+
+.block_name_music h2
+{
+    margin: 0;
+}
+
+.block_name_music p
+{
+    margin: 0;
+}
+
+.name_music {
+    font-family: Roboto;
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.block_audio {
+    background: rgb(230, 230, 230, 0.8);
+}
+
+#audioPlayeer {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.random {
+    background: rgb(230, 230, 230, 0.8);
+    display: block;
+    text-align: center;
+}
+
+.button_random {
+    display: inline-block;
+    border: none;
+    padding: 2% 4%;
+    margin-top: 2%;
+    background: #0175FC;
+    background: linear-gradient(to right, #0175FC, #3268B5);
+    color: #fff;
+    font-size: 100%;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.history {
+    background: rgb(230, 230, 230, 0.8);
+    display: block;
+}
+
+summary {
+    display: inline-block;
+    border: none;
+    margin-top: 2%;
+    padding: 1% 2%;
+    background: #0175FC;
+    background: linear-gradient(to right, #0175FC, #3268B5);
+    color: #fff;
+    font-size: 100%;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.history input[type=checkbox] {
+    display: none;
+}
+
+#all_history {
+    padding: 1%;
+    list-style-position: inside;
+}
+
+.history input[type=checkbox] ~ #all_history {
+    display: none;
+}
+
+.history input[type=checkbox]:checked ~ #all_history {
+    display: block;
+}
+
+.tracks_history {
+    cursor: pointer;
+    width: 100%;
+}
+
+.donations {
+    position: relative;
+    overflow-y: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    height: 240px;
+    background: rgb(196, 196, 196, 0.8);
+}
+
+.donation {
+    position: relative;
+}
+
+.donate_message
+{
+    position: relative;
+}
+
+.donate_name h1
+{
+    position: relative;
+    background: rgb(230, 230, 230, 0.9);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 170%;
+    margin: 0;
+}
+
+.donate_message p
+{
+    position: relative;
+    font-family: Roboto;
+    font-size: 120%;
+    margin: 0;
+    padding: 1%;
+}
+
+.donation_image {
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.donate_url {
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.button_donation {
+    position: relative;
+    display: inline-block;
+    border: none;
+    background: #0175FC;
+    background: linear-gradient(to right, #0175FC, #3268B5);
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.button_donation p {
+    margin: 1.5%;
+}
+
+.donate_text {
+    position: relative;
+    color: #fff;
+    text-align: justify;
+    font-size: 165%;
+    font-weight: bold;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.messages {
+    position: relative;
+    overflow-y: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    height: 240px;
+    background: rgb(196, 196, 196, 0.8);
+    background: rgb(230, 230, 230, 0.9);
+}
+
+.message {
+    position: relative;
+}
+
+.sender_message p {
+    position: relative;
+    font-family: Roboto;
+    font-size: 120%;
+    margin: 0;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.text_message p {
+    position: relative;
+    font-family: Roboto;
+    font-size: 120%;
+    margin: 0;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+
+.action_message {
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%; 
+}
+
+.action_message p {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 120%;
+    color: #fff;
+    display: inline-block;
+}
+
+.block_your_name {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.block_your_message {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.your_name {
+    font-size: 90%;
+    width: 25%;
+}
+
+.your_message {
+    font-size: 90%;
+    margin-top: 1%;
+    width: 35%;
+}
+
+.send_message {
+    display: inline-block;
+    position: relative;
+    border: none;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 1% 2%;
+    background: #0175FC;
+    background: linear-gradient(to right, #0175FC, #3268B5);
+    color: #fff;
+    font-size: 100%;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+#lastIdDonations {
+    display: none;
+}
+
+#lastIdMessages {
+    display: none;
+}
+
+.buttons {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link_button {
+    width: 32px;
+    height: 32px;
+    filter: opacity(30);
+    opacity: 0.3
+}
+
+#telegram {
+    padding-right: 50%;
+}
+
+#github {
+    padding-left: 50%;
+}
