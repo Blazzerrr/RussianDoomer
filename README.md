@@ -1,8 +1,5 @@
 # Random Russian Doomer
 
-## Русская тоска здесь
-**[https://russiandoomer.ru](https://russiandoomer.ru)**
-
 ## Скриншот
 ![Screenshot](https://github.com/Blazzerrr/RussianDoomer/blob/main/image.png)
 
